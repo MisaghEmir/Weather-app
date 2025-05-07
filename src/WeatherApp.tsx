@@ -2,6 +2,12 @@ import  { useState, useEffect } from "react";
 import Sidebar from "./components/Sidebar";
 import axios from "axios";
 import { BlinkBlur } from "react-loading-indicators";
+import Sun from './images/sun.jpg'
+import Train from './images/train.jpg'
+import PartlyCloudy from './images/PartlyCloudy.png'
+import Cloudy from './images/cloudy.png'
+import Moon from './images/moon.jpg'
+
 
 type WeatherData = {
   location: { name: string; region: string; country: string };
@@ -55,31 +61,31 @@ export default function WeatherApp() {
       <div className="z-[-1] absolute left-0 top-0 w-full h-full">
         {weather && weather.current.condition.text === "Sunny" ? (
           <img
-            src={"/images/sun.jpg"}
+            src={Sun}
             alt=""
             className="w-full h-full object-cover md:object-fill"
           />
         ) : weather?.current.condition.text === "Mist" ? (
           <img
-            src={"/images/cloudy.png"}
+            src={Cloudy}
             alt=""
             className="w-full h-full object-cover md:object-fill"
           />
         ) : weather?.current.condition.text === "Partly cloudy" ? (
           <img
-            src={"/images/PartlyCloudy.png"}
+            src={PartlyCloudy}
             alt=""
             className="w-full h-full object-cover md:object-fill"
           />
         ) : weather?.current.condition.text === "Clear" ? (
           <img
-            src={"/images/moon.jpg"}
+            src={Moon}
             alt=""
             className="w-full h-full object-cover md:object-fill"
           />
         ) : (
           <img
-            src={"/images/train.jpg"}
+            src={Train}
             alt=""
             className="w-full h-full object-cover md:object-fill"
           />

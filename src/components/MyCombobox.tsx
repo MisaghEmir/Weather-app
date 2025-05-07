@@ -1,6 +1,5 @@
 import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
-import clsx from "clsx";
 import { useState, Fragment } from "react";
 import data from "../data/City.json";
 

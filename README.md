@@ -6,7 +6,7 @@ A simple and responsive weather app built with **React** that displays real-time
 
 ## 🔗 Live Demo
 
-👉 [View Demo](https://your-demo-url.com)
+👉 [View Demo](https://misaghemir.github.io/Weather-app)
 
 ![Weather App Screenshot](./public/screenshot.jpg)
 
